@@ -29,3 +29,10 @@ bin/
 .DS_Store
 # Project exclude paths
 /target/
+/.idea/dbnavigator.xml
+/.idea/encodings.xml
+/.idea/jarRepositories.xml
+/.idea/misc.xml
+/.idea/compiler.xml
+/.idea/uiDesigner.xml
+/.idea/vcs.xml
