@@ -11,36 +11,18 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>com.picpay</groupId>
-    <artifactId>ms-cardpj-limits-batchProcess</artifactId>
+    <groupId>com.test</groupId>
+    <artifactId>spring_batch_test</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>ms-cardpj-limits-batchProcess</name>
-    <description>Este microsserviço prover recursos necessários para propagar alterações de limite provenientes do time
-        de recebíveis para a
-        Paysmart.
+    <name>Batch Config</name>
+    <description>Configuração do projeto de batch process para o microsserviço de limites de cartão PJ.
     </description>
 
     <properties>
         <java.version>21</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
-        <spring.cloud.version>2023.0.0</spring.cloud.version>
-        <archunit-junit5.version>1.2.0</archunit-junit5.version>
-        <net.logstash.logback>7.3</net.logstash.logback>
-        <jacoco-maven-plugin.version>0.8.11</jacoco-maven-plugin.version>
-        <jacoco.reportPath>${project.basedir}/../target/jacoco.exec</jacoco.reportPath>
-        <jjwt.version>0.12.6</jjwt.version>
-        <sonar.organization>
-            nxgbiqstumcjehqxdrnhyefpsycaavryialkxzjevbfqjzdzsgilzwwgezkpsswareusxfgyqggwwmccvcohbsvxtegwdvrrldwc
-        </sonar.organization>
-        <org.springdoc.version>2.2.0</org.springdoc.version>
-        <org.mapstruct.version>1.4.2.Final</org.mapstruct.version>
-        <easy-random-core.version>5.0.0</easy-random-core.version>
-        <feign.version>13.1</feign.version>
-        <sonar-maven-plugin.version>3.9.1.2184</sonar-maven-plugin.version>
-        <aws-sdk.version>2.20.121</aws-sdk.version>
     </properties>
 
     <dependencies>
@@ -145,30 +127,6 @@
                     <source>${java.version}</source>
                     <target>${java.version}</target>
                 </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.sonarsource.scanner.maven</groupId>
-                <artifactId>sonar-maven-plugin</artifactId>
-                <version>${sonar-maven-plugin.version}</version>
-            </plugin>
-            <plugin>
-                <groupId>org.jacoco</groupId>
-                <artifactId>jacoco-maven-plugin</artifactId>
-                <version>${jacoco-maven-plugin.version}</version>
-                <executions>
-                    <execution>
-                        <id>prepare-agent</id>
-                        <goals>
-                            <goal>prepare-agent</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>report</id>
-                        <goals>
-                            <goal>report</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
         </plugins>
     </build>
