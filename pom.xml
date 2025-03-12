@@ -15,7 +15,7 @@
     <artifactId>spring_batch_test</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>Batch Config</name>
-    <description>Configuração do projeto de batch process para o microsserviço de limites de cartão PJ.
+    <description>Configuração do projeto de batch process.
     </description>
 
     <properties>
@@ -70,9 +70,6 @@
         </dependency>
     </dependencies>
 
-    <dependencyManagement>
-    </dependencyManagement>
-
     <build>
         <plugins>
             <plugin>
@@ -107,17 +104,6 @@
                             <artifactId>lombok</artifactId>
                         </exclude>
                     </excludes>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <configuration>
-                    <archive>
-                        <manifest>
-                            <mainClass>com.picpay.ApplicationApi</mainClass>
-                        </manifest>
-                    </archive>
                 </configuration>
             </plugin>
             <plugin>
